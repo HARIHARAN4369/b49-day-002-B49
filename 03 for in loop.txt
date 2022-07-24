@@ -1,0 +1,9 @@
+// sample of for in loop 
+
+var arr = [ 'hello', 1, 'JavaScript','hariharan','gowtham' ];
+
+// using for...in loop
+
+for (let x in arr) {
+    console.log(arr[x]);
+}
