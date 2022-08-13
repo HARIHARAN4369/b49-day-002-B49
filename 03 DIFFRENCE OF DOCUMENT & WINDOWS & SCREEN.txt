@@ -2,7 +2,8 @@
 DIFFRENCE BETWEEN DOCUMENT & WINDOWS & SCREEN
 
 	# DOCUMENT
-	
+	* document contains the DOM, initialized by parsing HTML
+	* Window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model. You can 		access it as window.
 	* It represents any HTML document or web page 
 	  that is loaded in the browser.
 	* It is loaded inside the window.
@@ -15,12 +16,15 @@ DIFFRENCE BETWEEN DOCUMENT & WINDOWS & SCREEN
 	* Properties of document objects such as title, body, cookies, etC
 	* example:
 	  document.title :  will return the title of the document
+	* Each window object has a document object to be rendered
 	  
 	# WINDOWS
-	
+	* window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+	* window is the execution context and global object for that context's JavaScript
 	* It represents a browser window or frame 
 	* window is the root of everything
 	  that displays the contents of the webpage
+	* Each browser tab has its own top-level window object 
 	* It is the very first object that is loaded in the browser
 	* It is the object of the browser.
 	* Global objects, functions, and variables of 
@@ -32,7 +36,7 @@ DIFFRENCE BETWEEN DOCUMENT & WINDOWS & SCREEN
 		window.innerHeight : will return the height of the content area of the browser
 		
 	# SCREEN
-	
+	*  window.screen or just screen is a small information object about physical screen dimensions.
 	*  screen properties width and height are the full screen
 	*  screen properties availWidth and availHeight omit the toolbar
 	*  SCREEN IS just has screen dimensions
@@ -40,4 +44,6 @@ DIFFRENCE BETWEEN DOCUMENT & WINDOWS & SCREEN
 	*  It can be used to display screen width, height, colorDepth, pixelDepth
 	*  It is not mandatory to write window prefix with screen object
 	*  It can be written without window prefix.
+	*  screen describes the physical display's full screen
+	*  The window object also has a screen properties width and height are the full screen
 	
